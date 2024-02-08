@@ -1,6 +1,7 @@
 import os
 import sys
 from datetime import datetime, timedelta
+import xlsxwriter
 
 from data_operations import setup, rm_zips
 from watchlist_operations import watchlist, closingFilter
@@ -10,6 +11,12 @@ def main():
     directories = [c.ONE_MONTH_PATH, c.FIVE_DAYS_PATH, c.THREE_MONTHS_PATH]
     destination = os.getcwd()
     rm_zips(destination)
+    file_path = c.RESULTS_FILE
+    workbook = xlsxwriter.Workbook(file_path)
+    workbook.add_worksheet('1 MONTH')
+    workbook.add_worksheet('5 DAYS')
+    workbook.add_worksheet('3 MONTHS')
+    workbook.close()
     for index, directory in enumerate(directories):
         path = os.path.join(destination, directory)
         if not os.path.exists(path):
@@ -26,6 +33,7 @@ def main():
 
 
 if __name__ == "__main__":
+    
     three_months_date = datetime.strptime(
         (datetime.now() - timedelta(weeks=12)).strftime(c.DATE_FORMAT), c.DATE_FORMAT)
     one_month_date = datetime.strptime(
@@ -35,4 +43,5 @@ if __name__ == "__main__":
     end_date = datetime.strptime(
         (datetime.now() + timedelta(days=1)).strftime(c.DATE_FORMAT), c.DATE_FORMAT)
     main()
+
     sys.exit()

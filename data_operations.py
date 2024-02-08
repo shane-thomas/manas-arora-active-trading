@@ -50,8 +50,9 @@ def get_file(url, destination, one_month_date, five_days_date, end_date):
                 if five_days_date <= date_obj <= end_date:
                     path = os.path.join(destination, "../5 DAYS")
                     zip_ref.extract(file_info, path)
-
+    
     os.remove(zip_path)
+    
 
 
 def rm_zips(directory):

@@ -1,5 +1,3 @@
-from datetime import datetime, timedelta
-
 URL = "https://archives.nseindia.com/content/historical/EQUITIES/"
 DATE_FORMAT = '%Y-%m-%d'
 RESULTS_FILE = 'Results.xlsx'
