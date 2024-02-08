@@ -35,6 +35,7 @@ Make sure you have Python installed on your system. If not, you can download it 
 - Run the main script using Python.
 
     ```bash
+    pip install --upgrade pandas
     python main.py
     ```
 
