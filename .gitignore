@@ -1,0 +1,7 @@
+#Data is downloaded for analysis
+DATA/
+
+#Results Files
+*.xlsx
+
+src/__pycache__
