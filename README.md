@@ -13,13 +13,13 @@ Make sure you have Python installed on your system. If not, you can download it 
 1. **Clone the repository to your local machine:**
 
     ```bash
-    git clone https://github.com/your-username/active-trading-watchlist.git
+    git clone https://github.com/shane-thomas/manas-arora-active-trading.git
     ```
 
 2. **Navigate to the project directory:**
 
     ```bash
-    cd active-trading-watchlist
+    cd manas-arora-active-trading
     ```
 
 ### Usage
@@ -29,7 +29,7 @@ Make sure you have Python installed on your system. If not, you can download it 
 - Open Terminal and navigate to the project directory using the `cd` command.
 
     ```bash
-    cd path/to/active-trading-watchlist
+    cd path/to/manas-arora-active-trading
     ```
 
 - Run the main script using Python.
@@ -44,7 +44,7 @@ Make sure you have Python installed on your system. If not, you can download it 
 - Open Command Prompt or PowerShell and navigate to the project directory using the `cd` command.
 
     ```bash
-    cd path\to\active-trading-watchlist
+    cd path\to\manas-arora-active-trading
     ```
 
 - Run the main script using Python.
